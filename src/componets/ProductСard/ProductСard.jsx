@@ -15,8 +15,7 @@ const ProductСard = ({name, price, imageUrl}) => {
               <p>{name}</p>
           </div>
           <div className="section__products__cards__price">
-              <span>{price}$</span>
-              {/*<span className="crossed__out__price">$95.00</span>*/}
+              <span>{price}р</span>
           </div>
           <div className="section__products__cards__img">
               <img src={imageUrl} />

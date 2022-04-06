@@ -16,9 +16,10 @@ return (
     <div>
         <header className="header__content __container">
               <div className="header__text-content">
-                  <p className="header__text-content__title">
+                <p className="header__text-content__title">
                     Магазин Mebel-tech<br />
-                    Современная мебель</p>
+                    Современная мебель
+                </p>
 
                   <p className="header__text-content__text">
                       
@@ -39,14 +40,12 @@ return (
 
       <section className="section__clients __container__main">
           <div className="section__clients-container">
-              <p className="section__clients-container__title">SOME OF OUR TRUSTED CLIENTS</p>
+              <p className="section__clients-container__title">Mebel-tech это</p>
               <div className="section__clients-container__images">
-                  <img src="img/logo_1.png" />
-                  <img src="img/logo_2.png" />
-                  <img src="img/logo_3.png" />
-                  <img src="img/logo_4.png" />
-                  <img src="img/logo_5.png" />
-                  <img src="img/logo_6.png" />
+                  <p>Быстрая доставка</p>
+                  <p>Гарантия качества</p>
+                  <p>Более 11-ти лет опыта на рынке</p>
+
               </div>
           </div>
       </section>
@@ -55,11 +54,8 @@ return (
               <div className="furniture__collection__1__container">
                   <div className="furniture__collection__1-text__container">
                       <div className="furniture__collection__1-title">
-                          <p>Residential<br />
-                          Furniture</p>
-                      </div>
-                      <div className="furniture__collection__1-subtitle">
-                          Browse Collection
+                          <p>Модная<br />
+                          мебель</p>
                       </div>
                   </div>
                   <div className="furniture__collection__1-img">
@@ -68,11 +64,8 @@ return (
               <div className="furniture__collection__2__container">
                   <div className="furniture__collection__2-text__container">
                       <div className="furniture__collection__2-title">
-                            <p>Hospitality<br />
-                          Furniture</p>
-                        </div>
-                        <div className="furniture__collection__2-subtitle">
-                            <p>Browse Collection</p>
+                            <p>Больничная<br />
+                            мебель</p>
                         </div>
                     </div>
                     <div className="furniture__collection__2-img">
@@ -85,24 +78,15 @@ return (
                 <div className="section__products__nav">
                     <div className="section__products__nav__top">
                         <span className="section__products__nav__top__left">
-                            <span className="section__products__nav__top__left-title">PRODUCTS</span>
-                            <span className="section__products__nav__top__left-selling">
-                                <span>Best Selling</span>
-                                <span>Most Popular</span>
-                            </span>
+                            <span className="section__products__nav__top__left-title">Категории</span>
                         </span>
                         <span className="section__products__nav__top__see-all">
-                            <span>See All</span>
-                            <img src="img/Arrow.svg" />
+                            <NavLink to="/all">
+                                <span>Посмотреть все</span>
+                                <img src="img/Arrow.svg" />
+                            </NavLink>
                         </span>
                     </div>
-                    {/*<div className="section__products__nav__lower">
-                        <span>All</span>
-                        <span>Bed</span>
-                        <span>Sofa</span>
-                        <span>Chair</span>
-                        <span>Light</span>
-                    </div>*/}
                 </div>
 
                 <a name="categories"></a>
@@ -111,7 +95,7 @@ return (
                         <ProductСard key={obj.id} {...obj} />
                     ))}
                 </div>
-                
+                 
           </div>
       </section>
     </div>

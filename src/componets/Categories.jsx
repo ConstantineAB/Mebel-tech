@@ -9,24 +9,20 @@ const Categories = ({ items, onClickItem }) => {
       onClickItem(index);
     }
 
-  console.log('RERENDER')
-
   return (
     <div className="categories">
-      <ul>
-        <li className={activeItem === null ? 'activeItem' : ''} onClick={() => onSelectItem(null)}>
+        <span className={activeItem === null ? 'activeItem' : ''} onClick={() => onSelectItem(null)}>
           Все
-        </li>
+        </span>
         {items &&
           items.map((name, index) => (
-            <li
+            <span
               className={activeItem === index ? 'activeItem' : ''}
               onClick={() => onSelectItem(index)}
               key={`${name}_${index}`}>
               {name}
-            </li>
+            </span>
           ))}
-      </ul>
     </div>
   );
 };

@@ -6,9 +6,10 @@
           "name": "Стул",
           "types": [0, 1],
           "sizes": [26, 30, 40],
-          "price": 803,
+          "price": 3803,
           "category": 0,
-          "rating": 4
+          "rating": 4,
+          "popular": 1
         },
         {
           "id": 1,
@@ -16,9 +17,10 @@
           "name": "Дизайнерское кресло",
           "types": [0],
           "sizes": [26, 40],
-          "price": 245,
+          "price": 20250,
           "category": 1,
-          "rating": 6
+          "rating": 6,
+          "popular": 1
         },
         {
           "id": 2,
@@ -26,9 +28,10 @@
           "name": "Диван угловой тканевый",
           "types": [0],
           "sizes": [26, 40],
-          "price": 295,
+          "price": 29500,
           "category": 1,
-          "rating": 4
+          "rating": 4,
+          "popular": 1
         },
         {
           "id": 3,
@@ -36,7 +39,7 @@
           "name": "Кресло из экокожи",
           "types": [1],
           "sizes": [26, 30, 40],
-          "price": 275,
+          "price": 27500,
           "category": 2,
           "rating": 2
         },
@@ -46,7 +49,7 @@
           "name": "Письменный стол",
           "types": [0, 1],
           "sizes": [26, 30, 40],
-          "price": 415,
+          "price": 4150,
           "category": 3,
           "rating": 8
         },
@@ -56,7 +59,7 @@
           "name": "Раковина",
           "types": [0],
           "sizes": [30, 40],
-          "price": 580,
+          "price": 5800,
           "category": 2,
           "rating": 2
         },
@@ -66,7 +69,7 @@
           "name": "Люстра",
           "types": [0, 1],
           "sizes": [26, 30, 40],
-          "price": 675,
+          "price": 6750,
           "category": 1,
           "rating": 9
         },
@@ -76,7 +79,7 @@
           "name": "Диван угловой",
           "types": [0, 1],
           "sizes": [26, 30, 40],
-          "price": 450,
+          "price": 35000,
           "category": 4,
           "rating": 10
         },
@@ -86,7 +89,7 @@
           "name": "Гостиный столик",
           "types": [0, 1],
           "sizes": [26, 30, 40],
-          "price": 395,
+          "price": 8900,
           "category": 5,
           "rating": 10
         }

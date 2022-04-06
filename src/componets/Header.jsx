@@ -18,9 +18,6 @@ const Header = () => {
                       <li className="nav-list_item">Контакты</li>
                   </ul>
                   <div className="icon-nav nav__container">
-                      <div>
-                          <img src="img/search.svg" />
-                      </div>
                       <div className="basket">
                         <NavLink to="/cart"><div className="basket__number">2</div>
                         <img src="img/basket.svg" /></NavLink>

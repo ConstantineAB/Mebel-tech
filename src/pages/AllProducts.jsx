@@ -6,7 +6,6 @@ import Categories from '../componets/Categories';
 import ProductСard from '../componets/ProductСard/ProductСard';
 
 import { setCategory } from '../store/actions/filters';
-console.log(setCategory)
 
 const AllProducts = () => {
     const dispatch = useDispatch();
@@ -22,11 +21,7 @@ const AllProducts = () => {
                 <div className="section__products__nav">
                     <div className="section__products__nav__top">
                         <span className="section__products__nav__top__left">
-                            <span className="section__products__nav__top__left-title">PRODUCTS</span>
-                            <span className="section__products__nav__top__left-selling">
-                                <span>Best Selling</span>
-                                <span>Most Popular</span>
-                            </span>
+                            <span className="section__products__nav__top__left-title">ВСЕ ТОВАРЫ</span>
                         </span>
                         <span className="section__products__nav__top__see-all">
                             {<SortPopup 
@@ -40,7 +35,7 @@ const AllProducts = () => {
                     </div>
                         <Categories 
                             onClickItem={onSelectCategory}
-                            items={['All', 'Bed', 'Sofa', 'Chair', 'Light']}
+                            items={['Кровати', 'Кресла', 'Стулья', 'Освещение']}
                         />
                 </div>
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Futter = () => {
     return (
@@ -6,22 +7,18 @@ const Futter = () => {
             <div className="futter __container__main">
                 <div className="futter__container __container">
                     <div className="nav futter__nav">
-                        <div className="logo">
-                            <img src="img/Logo.svg" />
-                        </div>
+                    <NavLink to="/">
+                        <div className="logo">Mebel-tech</div>
+                    </NavLink>
                         <div className="top-nav nav__container">
                             <ul className="nav-list nav__container">
-                                <li className="nav-list_item">About</li>
-                                <li className="nav-list_item">Products</li>
-                                <li className="nav-list_item">Service</li>
-                                <li className="nav-list_item">Contact</li>
+                                <li className="nav-list_item">О нас</li>
+                                <li className="nav-list_item"><NavLink to="/all">Все товары</NavLink></li>
+                                <li className="nav-list_item">Контакты</li>
                             </ul>
                             <div className="icon-nav nav__container">
                                 <div>
                                     <img src="img/vk.png" />
-                                </div>
-                                <div>
-                                    <img src="img/instagram.png" />
                                 </div>
                                 <div>
                                     <img src="img/youtube.png" />
