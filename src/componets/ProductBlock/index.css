@@ -1,11 +1,11 @@
 .section__products__cards {
+  margin-top: 60px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 315px;
   height: 444px;
-  margin-top: 70px;
   border: solid #d9ab82;
   background-color: #fff4e8;
   border-radius: 10px;

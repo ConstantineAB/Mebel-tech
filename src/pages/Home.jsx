@@ -1,7 +1,7 @@
 import React from 'react';
-import ProductСard from '../componets/ProductСard/ProductСard';
+import ProductBlock from '../componets/ProductBlock';
 import { useSelector } from 'react-redux';
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -10,7 +10,7 @@ const Home = () => {
         return {
           items: products.items
         }
-    });
+    }); 
     
 return (
     <div>
@@ -92,7 +92,7 @@ return (
                 <a name="categories"></a>
                 <div className="section__products__cards__container">
                     {items.map((obj) => (
-                        <ProductСard key={obj.id} {...obj} />
+                        <ProductBlock key={obj.id} {...obj} />
                     ))}
                 </div>
                  

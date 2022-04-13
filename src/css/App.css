@@ -106,9 +106,12 @@ button {
 }
 .basket {
   position: relative;
-  width: 24px;
+  width: max-content;
   height: 24px;
   z-index: 10;
+}
+.basket span {
+  margin: auto 0;
 }
 .basket__number {
   width: 15px;
@@ -283,34 +286,31 @@ button {
 /* section__products */
 .section__products {
   display: flex;
+  margin-top: 170px;
+  max-width: 1200px;
 }
 .section__products__container {
+  width: 100%;
   min-height: 1050px;
 }
 .section__products__nav {
   width: 100%;
-  min-height: 470px;
+  min-height: 300px;
 }
 .section__products__nav__top {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
 }
 .section__products__nav__top__left {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 170px;
+  max-width: 320px;
 }
 .section__products__nav__top__left-title {
-  font-size: 50px;
+  font-size: 34px;
   font-weight: 700;
   color: #3d3d3f;
-  padding-right: 100px;
 }
 .section__products__nav__top__left-selling {
   font-size: 23px;
@@ -322,7 +322,6 @@ button {
 }
 .section__products__nav__top__see-all {
   width: 103px;
-  margin-top: 170px;
   padding-right: 50px;
 }
 .section__products__nav__top__see-all span {
@@ -335,9 +334,9 @@ button {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 70%;
+  width: 70%;
   margin: 0 auto;
-  padding-top: 110px;
+  margin-top: 110px;
 }
 .categories span {
   padding: 10px;
@@ -354,10 +353,9 @@ button {
   color: #000;
 }
 .section__products__cards__container {
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  max-width: 100%;
+  justify-content: space-around;
+  max-width: 100vw;
   min-height: auto;
   flex-wrap: wrap;
 }

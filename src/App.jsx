@@ -6,21 +6,14 @@ import Header from './componets/Header';
 
 import './css/App.css';
 import AllProducts from './pages/AllProducts';
-import axios from 'axios';
 import { useDispatch } from 'react-redux';
-import { setProducts } from './store/actions/products';
 import Cart from './pages/Cart';
 
 
 
 const App = () => {
-  const dispatch = useDispatch();
-
-  React.useEffect(() => {
-    axios.get('http://localhost:3001/db.json').then(({ data }) => {
-      dispatch(setProducts(data.products));
-    })
-  }, [])
+   
+  
 
   return (
     <Router>

@@ -8,8 +8,7 @@
           "sizes": [26, 30, 40],
           "price": 3803,
           "category": 0,
-          "rating": 4,
-          "popular": 1
+          "rating": 4
         },
         {
           "id": 1,
@@ -19,8 +18,7 @@
           "sizes": [26, 40],
           "price": 20250,
           "category": 1,
-          "rating": 6,
-          "popular": 1
+          "rating": 6
         },
         {
           "id": 2,
@@ -30,8 +28,7 @@
           "sizes": [26, 40],
           "price": 29500,
           "category": 1,
-          "rating": 4,
-          "popular": 1
+          "rating": 4
         },
         {
           "id": 3,
