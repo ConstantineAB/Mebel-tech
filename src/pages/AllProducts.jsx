@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import SortPopup from '../componets/SortPopup';
@@ -8,7 +8,6 @@ import LoadingBlock from '../componets/ProductBlock/LoadingBlock';
 
 import { setCategory, setSortBy } from '../store/actions/filters';
 import { fetchProducts } from '../store/actions/products';
-import { onAddProductToCart } from '../store/actions/cart'
 
 const categories = ['Кровати', 'Кресла', 'Стулья', 'Освещение'];
 

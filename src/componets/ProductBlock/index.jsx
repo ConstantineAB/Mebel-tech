@@ -3,7 +3,6 @@ import './index.css';
 import PropTypes from 'prop-types';
 import Button from '../Button';
 import classNames from 'classnames';
-import { convertCompilerOptionsFromJson } from 'typescript';
         
 
 const ProductBlock = ({ id, name, price, imageUrl, types, sizes, onClickAddProducts, addedCount }) => {
