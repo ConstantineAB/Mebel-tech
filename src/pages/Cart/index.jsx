@@ -4,8 +4,9 @@ import CartItem from '../../componets/CartItem';
 import './Cart.css';
 
 
-import { clearCart } from '../../store/actions/cart';
+import { clearCart, removeCartItem, plusCartItem, minusCartItem } from '../../store/actions/cart';
 import { Link } from 'react-router-dom';
+import Button from '../../componets/Button';
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -20,6 +21,24 @@ const Cart = () => {
       dispatch(clearCart())
     }
   }
+
+  const onRemoveItem = (id) => {
+    if (window.confirm('Вы действительно хотите удалить?')) {
+      dispatch(removeCartItem(id))
+    }
+  }
+  
+  const onPlusItem = (id) => {
+    dispatch(plusCartItem(id))
+  }
+
+  const onMinusItem = (id) => {
+    dispatch(minusCartItem(id))
+  }
+
+  const onClickOrder = () => {
+    alert('ЭТА ФУНКЦИЯ ВРЕМЕННО НЕ ДОСТУПНА')
+  } 
 
   return (
     <div>
@@ -95,11 +114,16 @@ const Cart = () => {
             <div className="content__items">
               {addedProducts.map((obj) => (
                 <CartItem 
+                  key={obj.id}
+                  id={obj.id}
                   name={obj.name}
                   type={obj.type}
                   size={obj.size}
                   totalPrice={items[obj.id].totalPrice}
                   totalCount={items[obj.id].items.length}
+                  onRemove={onRemoveItem}
+                  onMinus={onMinusItem}
+                  onPlus={onPlusItem}
                 />
               ))}
             </div>
@@ -120,9 +144,9 @@ const Cart = () => {
 
                   <span>Вернуться назад</span>
                 </a>
-                <div className="button pay-btn">
+                <Button onClick={onClickOrder} className="pay-btn">
                   <span>Оплатить сейчас</span>
-                </div>
+                </Button>
               </div>
             </div>
           </div>: <div className="cart cart--empty">
