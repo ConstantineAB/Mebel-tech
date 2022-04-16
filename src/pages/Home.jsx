@@ -89,12 +89,11 @@ return (
                     </div>
                 </div>
 
-                <a name="categories"></a>
-                <div className="section__products__cards__container">
+                {/*<div className="section__products__cards__container">
                     {items.map((obj) => (
                         <ProductBlock key={obj.id} {...obj} />
                     ))}
-                </div>
+                </div>*/}
                  
           </div>
       </section>

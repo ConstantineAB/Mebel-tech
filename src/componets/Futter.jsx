@@ -20,9 +20,6 @@ const Futter = () => {
                                 <div>
                                     <img src="img/vk.png" />
                                 </div>
-                                <div>
-                                    <img src="img/youtube.png" />
-                                </div>
                             </div>
                         </div>
                     </div>

@@ -108,7 +108,7 @@ const initialState = {
             items: newItems,
             totalCount,
             totalPrice,
-          }
+          } 
         }
 
       

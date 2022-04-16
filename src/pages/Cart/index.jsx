@@ -53,7 +53,6 @@ const Cart = () => {
             </div>
             <div className="header__cart">
               <div className="button button--cart">
-                <span>520 ₽</span>
                 <div className="button__delimiter"></div>
                 <svg
                   width="18"
@@ -84,7 +83,6 @@ const Cart = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span>3</span>
               </div>
             </div>
           </div>
@@ -117,6 +115,7 @@ const Cart = () => {
                   key={obj.id}
                   id={obj.id}
                   name={obj.name}
+                  img={obj.imageUrl}
                   type={obj.type}
                   size={obj.size}
                   totalPrice={items[obj.id].totalPrice}
@@ -130,7 +129,7 @@ const Cart = () => {
             <div className="cart__bottom">
               <div className="cart__bottom-details">
                 <span>
-                  Всего пицц: <b>{totalCount} шт.</b>
+                  Всего товаров: <b>{totalCount} шт.</b>
                 </span>
                 <span>
                   Сумма заказа: <b>{totalPrice} ₽</b>
@@ -149,8 +148,9 @@ const Cart = () => {
                 </Button>
               </div>
             </div>
-          </div>: <div className="cart cart--empty">
-              <span>Корзина пустая</span>
+          </div>: 
+          <div className="cart cart--empty">
+              <div>Корзина пустая</div>
               <p>
                 Вероятней всего, вы не заказывали ещё пиццу.<br />
                 Для того, чтобы заказать пиццу, перейди на главную страницу.
